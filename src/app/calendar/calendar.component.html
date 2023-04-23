@@ -1,0 +1,9 @@
+<input type="date" [(ngModel)]="user.date">
+<div class="form-group">
+    <button class="btn btn-default" (click)="submit(user)">Отправить</button>
+</div>
+<div *ngIf="done">
+    <div>Получено от сервера:</div>
+    <div>дата: {{receivedUser?.date}}</div>
+    <div>знаки зодиака: {{receivedUser?.zodiac}}</div>
+</div>
